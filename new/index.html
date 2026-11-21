@@ -43,12 +43,22 @@ nav a{margin-left:22px;text-decoration:none;font:600 13px var(--sans);letter-spa
 nav a:hover{color:var(--gold-hi)}
 nav a.cta{color:var(--gold-hi);border:1px solid var(--gold);padding:9px 16px}
 
-.hero{position:relative;isolation:isolate;text-align:center;padding:72px 0 80px;min-height:min(88vh,780px);display:grid;place-items:center;background:url(/assets/banner-dark.webp) 50% 50%/cover no-repeat}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(11,10,9,.30),rgba(11,10,9,.58) 62%,#0b0a09)}
-.logo{width:min(720px,88vw);aspect-ratio:1085/605;margin:0 auto;background:url(/assets/logo-black.webp) 50.25% 52.4%/115.6% auto no-repeat;box-shadow:0 34px 90px -24px #000d,0 0 0 1px #0008}
-.hero h1{font:400 clamp(48px,9vw,112px)/.95 var(--display);margin-top:34px;background:linear-gradient(180deg,var(--gold-hi),var(--gold) 48%,var(--gold-lo));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 14px #000a)}
-.hero p{max-width:50ch;margin:16px auto 30px;color:#eadfc6;font-size:17px;text-shadow:0 1px 12px #000a}
+/* Hero: the plaque is pinned to the wall in the photo, so it keeps its place at every width */
+.hero{background:var(--onyx);text-align:center;padding:0 0 80px}
+.stage{position:relative;width:100%;aspect-ratio:1896/830;background:url(/assets/banner-dark.webp) 50% 50%/cover no-repeat}
+.stage::after{content:"";position:absolute;inset:auto 0 0 0;height:24%;background:linear-gradient(transparent,var(--onyx))}
+.sign{position:absolute;z-index:2;left:11%;top:13%;width:43%;aspect-ratio:1085/605;isolation:isolate;
+  background:url(/assets/logo-black.webp) 50.25% 52.4%/115.6% auto no-repeat;
+  box-shadow:0 0 0 1px rgba(70,46,12,.7),0 1px 0 rgba(255,236,190,.35) inset,
+    7px 11px 14px -5px rgba(38,20,6,.62),16px 30px 46px -12px rgba(38,20,6,.45),30px 54px 90px -26px rgba(38,20,6,.35)}
+.sign::before{content:"";position:absolute;inset:0;z-index:-1;transform:translate(5px,7px);background:linear-gradient(135deg,#6d4f14,#2e1f07)}
+.sign::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(118deg,rgba(255,236,196,.26) 0%,rgba(255,236,196,.06) 34%,rgba(0,0,0,0) 55%,rgba(0,0,0,.26) 100%)}
+.hero .wrap{padding-top:30px}
+.hero h1{font:400 clamp(48px,9vw,112px)/.95 var(--display);background:linear-gradient(180deg,var(--gold-hi),var(--gold) 48%,var(--gold-lo));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:50ch;margin:16px auto 30px;color:var(--mute);font-size:17px}
 .hero .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+@media(max-width:760px){.stage{aspect-ratio:4/3.3;background-position:14% 50%}.sign{left:10%;top:15%;width:80%}}
 .band{position:relative;background:#2a1b12}
 .band img{width:100%;aspect-ratio:1896/830;object-fit:cover;min-height:300px}
 .band .txt{position:absolute;left:max(5vw,20px);top:50%;transform:translateY(-50%);max-width:min(430px,44vw);color:#24160c}
@@ -116,8 +126,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <main id="top">
   <section class="hero">
+    <div class="stage"><div class="sign" role="img" aria-label="Lux Cut sign: gold crown above LUX CUT lettering with crossed scissors, mounted on the studio wall"></div></div>
     <div class="wrap">
-      <div class="logo" role="img" aria-label="Lux Cut logo: gold crown above LUX CUT lettering with crossed scissors"></div>
       <h1>Look like royalty.</h1>
       <p>Precision cuts, colour and styling in a studio built around you. Walk in sharp, walk out unforgettable.</p>
       <div class="row"><a class="btn" href="#visit">Book your chair</a><a class="btn ghost" href="#services">See services</a></div>
