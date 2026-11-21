@@ -51,13 +51,13 @@ nav a:hover{color:var(--gold-hi)}
 nav a.cta{color:var(--gold-hi);border:1px solid var(--gold);padding:9px 16px}
 
 .hero{background:var(--mocha);text-align:center;padding:0 0 84px}
-.stage{position:relative;width:100%;aspect-ratio:1903/826;background:url(/assets/hero-space.webp) 50% 50%/cover no-repeat}
+.stage{position:relative;width:100%;aspect-ratio:1903/826;max-height:68vh;background:url(/assets/hero-space.webp) 50% 22%/cover no-repeat}
 .stage::after{content:"";position:absolute;inset:auto 0 0 0;height:26%;background:linear-gradient(transparent,var(--mocha))}
 .hero .wrap{padding-top:30px}
 .hero h1{font:400 clamp(48px,9vw,112px)/.95 var(--display);background:linear-gradient(180deg,var(--gold-hi),var(--gold) 55%,#c98d38);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{max-width:50ch;margin:16px auto 30px;color:var(--on-dark-soft);font-size:17px}
 .hero .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-@media(max-width:760px){.stage{aspect-ratio:4/3.3;background-position:18% 50%}}
+@media(max-width:760px){.stage{aspect-ratio:4/3.3;max-height:none;background-position:18% 50%}}
 
 section{padding:88px 0}
 .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
