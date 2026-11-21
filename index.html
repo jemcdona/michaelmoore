@@ -68,6 +68,17 @@ section{padding:88px 0}
 .card h3{font:800 16px var(--sans);margin:10px 0 4px;letter-spacing:.02em;color:var(--espresso)}
 .card p{color:var(--ink-soft);font-size:14px}
 
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:20px 64px}
+.svc h3.g{font:400 40px/1 var(--display);letter-spacing:.03em;color:var(--gold-ink);padding-bottom:10px;border-bottom:2px solid var(--gold)}
+.svc ul{list-style:none}
+.svc li{padding:18px 0;border-bottom:1px solid var(--line-light)}
+.svc li b{display:block;font:800 17px var(--sans);color:var(--espresso);letter-spacing:.01em}
+.svc li span{display:block;margin-top:3px;color:var(--ink-soft);font-size:15px}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.slot{aspect-ratio:1;display:grid;place-items:center;text-align:center;background:radial-gradient(ellipse at 50% 40%,#3a2210,var(--mocha) 70%);border:1px solid var(--gold-lo);box-shadow:inset 0 0 0 6px var(--mocha),inset 0 0 0 7px #8f551e88}
+.slot span{font:400 clamp(24px,3vw,34px)/1 var(--display);letter-spacing:.12em;color:var(--gold-hi)}
+.slot span::after{content:"";display:block;width:34px;height:2px;margin:12px auto 0;background:var(--gold)}
+@media(max-width:760px){.slots{grid-template-columns:repeat(2,1fr)}}
 .colour .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .colour img{width:100%;aspect-ratio:1;object-fit:cover;border:1px solid var(--line-dark)}
 .colour h2{margin:12px 0 18px}
@@ -126,13 +137,23 @@ footer a{color:var(--gold)}
 
   <section id="services"><div class="wrap">
     <div class="head"><div><span class="eyebrow">Services</span><h2>Hair services</h2></div><p>Every service starts with a consultation, so the result fits you.</p></div>
-    <div class="cards">
-      <div class="card"><b>Colour</b><h3>Balayage &amp; Highlights</h3><p>Hand-painted, sun-kissed dimension that grows out beautifully.</p></div>
-      <div class="card"><b>Colour</b><h3>Hair Colour &amp; Gloss</h3><p>Custom-mixed colour, root touch-ups and gloss for shine and tone.</p></div>
-      <div class="card"><b>Blonde</b><h3>Blonding &amp; Colour Correction</h3><p>Careful lightening, toning and correction, planned in a consultation.</p></div>
-      <div class="card"><b>Cut</b><h3>Precision Haircuts</h3><p>Tailored women&#39;s, men&#39;s and kids&#39; cuts, including tapered fades, shaped to your face and routine.</p></div>
-      <div class="card"><b>Style</b><h3>Blowouts &amp; Event Styling</h3><p>Polished, long-lasting styles for weddings, parties and special occasions.</p></div>
-      <div class="card"><b>Care</b><h3>Conditioning &amp; Shine Treatments</h3><p>Treatments that restore softness, smoothness and shine.</p></div>
+    <div class="svc">
+      <div>
+        <h3 class="g">Colour</h3>
+        <ul>
+          <li><b>Balayage &amp; Highlights</b><span>Hand-painted, sun-kissed dimension that grows out beautifully.</span></li>
+          <li><b>Hair Colour &amp; Gloss</b><span>Custom-mixed colour, root touch-ups and gloss for shine and tone.</span></li>
+          <li><b>Blonding &amp; Colour Correction</b><span>Careful lightening, toning and correction, planned in a consultation.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="g">Cut, Style &amp; Care</h3>
+        <ul>
+          <li><b>Precision Haircuts</b><span>Tailored women&#39;s, men&#39;s and kids&#39; cuts, including tapered fades, shaped to your face and routine.</span></li>
+          <li><b>Blowouts &amp; Event Styling</b><span>Polished, long-lasting styles for weddings, parties and special occasions.</span></li>
+          <li><b>Conditioning &amp; Shine Treatments</b><span>Treatments that restore softness, smoothness and shine.</span></li>
+        </ul>
+      </div>
     </div>
   </div></section>
 
@@ -166,10 +187,12 @@ footer a{color:var(--gold)}
 
   <section id="studio" class="studio"><div class="wrap">
     <div class="head"><div><span class="eyebrow">The studio</span><h2>A private space for precision, colour and care</h2></div></div>
-    <div class="details">
-      <div class="tall"><img src="/assets/studio-scissors-pouch.webp" alt="Gold scissors on a black leather pouch beside a comb, towel and flowers" loading="lazy"></div>
-      <div class="wide"><img src="/assets/hero-blush.webp" alt="Blush-toned studio with the Lux Cut sign on the wall, roses, gold scissors and a leather styling chair" loading="lazy"></div>
-    </div>
+    <div class="slots"><div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div>
+      <div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div>
+      <div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div>
+      <div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div>
+      <div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div>
+      <div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div></div>
   </div></section>
 
   <section class="visit dark" id="visit"><div class="wrap">
