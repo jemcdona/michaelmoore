@@ -1,56 +1,199 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lux Cut by Michael | Premium Barber &amp; Salon</title>
-<meta name="description" content="Lux Cut by Michael: precision cuts, fades, beard work and styling. Book your appointment today.">
-<link rel="icon" href="logo.webp" type="image/webp">
-<meta property="og:image" content="https://luxcutbymichael.com/logo.webp">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://luxcutbymichael.com/">
+<title>Lux Cut by Michael | Premium Hair Studio</title>
+<meta name="description" content="Lux Cut by Michael: precision cuts, colour and styling in a studio built around you.">
+<link rel="icon" href="/logo.webp" type="image/webp">
+<meta property="og:title" content="Lux Cut by Michael">
+<meta property="og:image" content="https://luxcutbymichael.com/assets/hero-space.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;600;800&display=swap">
 <style>
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-.logo{display:block;width:min(780px,92vw);aspect-ratio:1254/760;object-fit:cover;margin:0 auto 6px;mix-blend-mode:lighten;-webkit-mask-image:radial-gradient(ellipse at center,#000 62%,transparent 100%);mask-image:radial-gradient(ellipse at center,#000 62%,transparent 100%)}
-:root{--bg:#0e0e0f;--card:#17171a;--gold:#c9a24b;--text:#f3f0e8;--mute:#a7a398}
-*{box-sizing:border-box;margin:0}
-body{font-family:Georgia,serif;background:var(--bg);color:var(--text);line-height:1.6}
+/* Identity tokens, sampled from the studio banner: lit plaster wall, champagne marble, mocha sign face, brushed gold lettering */
+:root{
+  --plaster:#f2dfc8; --champagne:#f8e6cc; --sand:#c2a17d;
+  --gold-hi:#f9c372; --gold:#dfa54c; --gold-lo:#8f551e; --gold-ink:#7e5018;
+  --walnut:#6a3618; --mocha:#221207; --espresso:#170c05; --leopard:#603c23;
+  --cream:#f6e9d4; --line-light:#d9bf9c; --line-dark:#5a3a24;
+  --ink:#2b1a0e; --ink-soft:#6a4e37; --on-dark:#f6e9d4; --on-dark-soft:#d3bc9a;
+  --display:'Bebas Neue',Impact,sans-serif; --serif:'Cormorant Garamond',Georgia,serif; --sans:Manrope,system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--plaster);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
 a{color:inherit}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 6vw;position:sticky;top:0;background:#0e0e0fdd;backdrop-filter:blur(8px)}
-nav b{letter-spacing:.2em;color:var(--gold);text-transform:uppercase;font-size:14px}
-nav a{margin-left:20px;text-decoration:none;font:14px system-ui,sans-serif;color:var(--mute)}
-.hero{min-height:80vh;display:grid;place-content:center;text-align:center;padding:0 6vw;background:radial-gradient(circle at 50% 30%,#2a2415,var(--bg) 65%)}
-.hero h1{font-size:clamp(40px,9vw,88px);font-weight:400;letter-spacing:.04em}
-.hero h1 span{color:var(--gold)}
-.hero p{color:var(--mute);margin:14px auto 28px;max-width:520px}
-.btn{display:inline-block;background:var(--gold);color:#111;padding:14px 32px;text-decoration:none;font:600 14px system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase}
-section{padding:80px 6vw;max-width:1000px;margin:auto}
-h2{font-weight:400;font-size:34px;color:var(--gold);margin-bottom:28px;text-align:center}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.card{background:var(--card);padding:26px;border:1px solid #2a2a2e}
-.card h3{font-weight:400;font-size:20px}
-.card .p{color:var(--gold);font:600 18px system-ui,sans-serif;margin:6px 0}
-.card small{color:var(--mute);font:14px system-ui,sans-serif}
-.hours{font:16px system-ui,sans-serif;max-width:380px;margin:auto}
-.hours div{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #2a2a2e}
-.contact{text-align:center;color:var(--mute)}
-.contact a{color:var(--gold)}
-footer{text-align:center;padding:30px;color:#6f6c63;font:13px system-ui,sans-serif}
-</style></head><body>
-<nav><b>Lux Cut by Michael</b><div><a href="#services">Services</a><a href="#hours">Hours</a><a href="#contact">Contact</a></div></nav>
-<header class="hero"><div><img class="logo" src="logo.webp" alt="Lux Cut logo: gold crown and scissors"><h1 class="sr">Lux Cut by Michael</h1>
-<p>Precision cuts, sharp fades and a premium grooming experience.</p>
-<a class="btn" href="#contact">Book Your Appointment</a></div></header>
-<section id="services"><h2>Services</h2><div class="grid">
-<div class="card"><h3>Signature Haircut</h3><div class="p">$35</div><small>Consultation, precision cut and style.</small></div>
-<div class="card"><h3>Skin Fade</h3><div class="p">$40</div><small>Clean, seamless fade with finishing.</small></div>
-<div class="card"><h3>Beard Sculpt</h3><div class="p">$25</div><small>Shape-up, trim and hot towel.</small></div>
-<div class="card"><h3>Cut &amp; Beard</h3><div class="p">$55</div><small>The full lux experience.</small></div>
-<div class="card"><h3>Kids Cut</h3><div class="p">$25</div><small>Ages 12 and under.</small></div>
-<div class="card"><h3>Hair Colour</h3><div class="p">From $60</div><small>Consultation required.</small></div>
-</div></section>
-<section id="hours"><h2>Opening Hours</h2><div class="hours">
-<div><span>Tuesday - Friday</span><span>10am - 7pm</span></div>
-<div><span>Saturday</span><span>9am - 5pm</span></div>
-<div><span>Sunday - Monday</span><span>Closed</span></div></div></section>
-<section id="contact" class="contact"><h2>Book Now</h2>
-<p>Call or message to reserve your chair.</p><br>
-<p><a href="tel:+10000000000">(000) 000-0000</a> &middot; <a href="mailto:hello@luxcutbymichael.com">hello@luxcutbymichael.com</a></p><br>
-<a class="btn" href="mailto:hello@luxcutbymichael.com">Request Appointment</a></section>
-<footer>&copy; 2026 Lux Cut by Michael. All rights reserved.</footer>
-</body></html>
+.wrap{max-width:1120px;margin:auto;padding-inline:max(20px,env(safe-area-inset-left,0px))}
+.eyebrow{font:800 12px var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--gold-ink)}
+h2{font:400 clamp(44px,7vw,80px)/.95 var(--display);letter-spacing:.02em;color:var(--espresso)}
+.btn{display:inline-block;background:linear-gradient(180deg,var(--gold-hi),var(--gold) 55%,#c98d38);color:var(--espresso);padding:16px 36px;text-decoration:none;font:800 13px var(--sans);letter-spacing:.2em;text-transform:uppercase;border:0;cursor:pointer;box-shadow:0 8px 20px -10px #170c0599}
+.btn.ghost{background:transparent;color:var(--gold-hi);border:1px solid var(--gold);box-shadow:none}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--gold-ink);outline-offset:3px}
+@media (prefers-reduced-motion:no-preference){.btn{transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}}
+
+/* dark (mocha) sections */
+.dark{background:var(--mocha);color:var(--on-dark)}
+.dark .eyebrow{color:var(--gold)}
+.dark h2{color:var(--gold-hi)}
+.dark p{color:var(--on-dark-soft)}
+
+.preview{background:var(--gold);color:var(--espresso);text-align:center;font:600 12px var(--sans);padding:7px 12px}
+header.nav{position:sticky;top:0;z-index:30;background:#170c05ee;backdrop-filter:blur(10px);border-bottom:1px solid var(--line-dark)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:14px;flex-wrap:wrap}
+.mark{font:400 26px var(--display);letter-spacing:.14em;color:var(--gold-hi);text-decoration:none}
+.mark small{font:600 11px var(--sans);letter-spacing:.24em;color:var(--on-dark-soft);margin-left:8px}
+nav a{margin-left:22px;text-decoration:none;font:600 13px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-soft)}
+nav a:hover{color:var(--gold-hi)}
+nav a.cta{color:var(--gold-hi);border:1px solid var(--gold);padding:9px 16px}
+
+.hero{background:var(--mocha);text-align:center;padding:0 0 84px}
+.stage{position:relative;width:100%;aspect-ratio:1903/826;background:url(/assets/hero-space.webp) 50% 50%/cover no-repeat}
+.stage::after{content:"";position:absolute;inset:auto 0 0 0;height:26%;background:linear-gradient(transparent,var(--mocha))}
+.hero .wrap{padding-top:30px}
+.hero h1{font:400 clamp(48px,9vw,112px)/.95 var(--display);background:linear-gradient(180deg,var(--gold-hi),var(--gold) 55%,#c98d38);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:50ch;margin:16px auto 30px;color:var(--on-dark-soft);font-size:17px}
+.hero .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+@media(max-width:760px){.stage{aspect-ratio:4/3.3;background-position:18% 50%}}
+
+section{padding:88px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.head p{max-width:42ch;color:var(--ink-soft)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.card{background:var(--champagne);border:1px solid var(--line-light);padding:26px;box-shadow:0 14px 30px -22px #22120766}
+.card b{display:block;font:400 48px/1 var(--display);color:var(--gold-ink)}
+.card h3{font:800 16px var(--sans);margin:10px 0 4px;letter-spacing:.02em;color:var(--espresso)}
+.card p{color:var(--ink-soft);font-size:14px}
+
+.colour .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.colour img{width:100%;aspect-ratio:1;object-fit:cover;border:1px solid var(--line-dark)}
+.colour h2{margin:12px 0 18px}
+.colour p{margin-bottom:22px;max-width:46ch}
+.colour ul{list-style:none;margin-bottom:28px}
+.colour li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line-dark);color:var(--on-dark)}
+.colour li span{color:var(--gold-hi);font-weight:800}
+
+.meet{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:72px;align-items:center}
+.meet .pair{display:grid;grid-template-columns:1fr;gap:20px}
+
+.meet .pair figure{padding:6px;background:linear-gradient(135deg,var(--gold-hi),var(--gold) 50%,var(--gold-lo));box-shadow:0 22px 40px -22px #170c05aa}
+.meet img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border:12px solid var(--mocha)}
+.meet p{color:var(--ink-soft);max-width:44ch;margin-bottom:26px}
+
+.studio{background:var(--champagne)}
+.details{display:grid;grid-template-columns:1.2fr 1fr;gap:12px}
+.details img{width:100%;height:100%;object-fit:cover}
+.details .tall img{aspect-ratio:4/5}
+.details .wide{min-height:280px}
+.details .wide img{aspect-ratio:auto;min-height:280px;object-position:33% 50%}
+
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.hours div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-dark);color:var(--on-dark-soft)}
+.hours div b{color:var(--on-dark);font-weight:600}
+.contact p{margin-bottom:22px}
+.contact a.l{display:block;color:var(--gold-hi);font:600 22px var(--serif);text-decoration:none;margin-bottom:6px}
+footer{background:var(--espresso);color:#a98e6c;padding:34px 0;font-size:12px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{color:var(--gold)}
+
+@media(max-width:760px){
+  .colour .wrap,.visit .wrap,.details,.meet{grid-template-columns:1fr}
+  .meet{gap:36px}
+  .meet .pair{grid-template-columns:1fr 1fr;gap:12px}
+  nav a:not(.cta){display:none}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="mark" href="#top">LUX CUT<small>BY MICHAEL</small></a>
+  <nav><a href="#services">Services</a><a href="#studio">Studio</a><a href="#team">Michael</a><a href="#visit">Visit</a><a class="cta" href="#visit">Book</a></nav>
+</div></header>
+
+<main id="top">
+  <section class="hero">
+    <div class="stage" role="img" aria-label="The Lux Cut studio with the gold Lux Cut sign mounted on the wall, a leather styling chair and gold scissors on marble"></div>
+    <div class="wrap">
+      <h1>Look like royalty.</h1>
+      <p>Precision cuts, colour and styling in a studio built around you. Walk in sharp, walk out unforgettable.</p>
+      <div class="row"><a class="btn" href="#visit">Book your chair</a><a class="btn ghost" href="#services">See services</a></div>
+    </div>
+  </section>
+
+  <section id="services"><div class="wrap">
+    <div class="head"><div><span class="eyebrow">Services</span><h2>The menu</h2></div><p>Every service starts with a consultation, so the result fits you.</p></div>
+    <div class="cards">
+      <div class="card"><b>$35</b><h3>Signature Cut</h3><p>Consultation, precision cut and finish.</p></div>
+      <div class="card"><b>$40</b><h3>Skin Fade</h3><p>Seamless blend with a razor-sharp line.</p></div>
+      <div class="card"><b>$25</b><h3>Beard Sculpt</h3><p>Shape-up, trim and hot towel.</p></div>
+      <div class="card"><b>$55</b><h3>Cut &amp; Beard</h3><p>The full Lux experience.</p></div>
+      <div class="card"><b>$85+</b><h3>Colour &amp; Highlights</h3><p>Foils, gloss and tone, mixed for you.</p></div>
+      <div class="card"><b>$40</b><h3>Blow-dry &amp; Style</h3><p>Smooth, polished, event-ready.</p></div>
+    </div>
+  </div></section>
+
+  <section class="colour dark"><div class="wrap">
+    <img src="/assets/studio-colour-bowl.webp" alt="Colour bowl and brush with gold hair clips, foils and a black towel beside a gold mirror" loading="lazy">
+    <div>
+      <span class="eyebrow">Colour</span>
+      <h2>Colour, done properly</h2>
+      <p>Custom-mixed shades, careful foil work and a finish that grows out well. Colour services need a consultation first.</p>
+      <ul>
+        <li>Highlights &amp; foils<span>from $85</span></li>
+        <li>Gloss &amp; tone<span>from $45</span></li>
+        <li>Colour correction<span>by consultation</span></li>
+      </ul>
+      <a class="btn" href="#visit">Book a consultation</a>
+    </div>
+  </div></section>
+
+  <section id="team"><div class="wrap">
+    <div class="meet">
+      <div class="pair">
+        <figure><img src="/assets/portrait-a-2.webp" alt="Michael smiling in the Lux Cut studio" loading="lazy"></figure>
+        <figure><img src="/assets/portrait-b-1.webp" alt="Michael in a brown blazer in the Lux Cut studio" loading="lazy"></figure>
+      </div>
+      <div>
+        <span class="eyebrow">Meet Michael</span>
+        <h2 style="margin:12px 0 18px">The name on the door</h2>
+        <p>Lux Cut is built around one idea: you should leave looking and feeling like royalty. Expect a proper consultation, precise cutting and a finish that works every day, not just in the chair.</p>
+        <a class="btn" href="#visit">Book with Michael</a>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="studio" class="studio"><div class="wrap">
+    <div class="head"><div><span class="eyebrow">The studio</span><h2>A private space for precision, colour and care</h2></div></div>
+    <div class="details">
+      <div class="tall"><img src="/assets/studio-scissors-pouch.webp" alt="Gold scissors on a black leather pouch beside a comb, towel and flowers" loading="lazy"></div>
+      <div class="wide"><img src="/assets/hero-blush.webp" alt="Blush-toned studio with the Lux Cut sign on the wall, roses, gold scissors and a leather styling chair" loading="lazy"></div>
+    </div>
+  </div></section>
+
+  <section class="visit dark" id="visit"><div class="wrap">
+    <div>
+      <span class="eyebrow">Opening hours</span><h2 style="margin:12px 0 22px">Visit</h2>
+      <div class="hours">
+        <div><b>Tuesday to Friday</b><span>10am - 7pm</span></div>
+        <div><b>Saturday</b><span>9am - 5pm</span></div>
+        <div><b>Sunday and Monday</b><span>Closed</span></div>
+      </div>
+    </div>
+    <div class="contact">
+      <span class="eyebrow">Book</span><h2 style="margin:12px 0 22px">Reserve your chair</h2>
+      <p>Call, email or send a message. We will confirm your appointment.</p>
+      <a class="l" href="tel:+10000000000">(000) 000-0000</a>
+      <a class="l" href="mailto:hello@luxcutbymichael.com">hello@luxcutbymichael.com</a>
+      <p style="margin:6px 0 24px">Your address goes here</p>
+      <a class="btn" href="mailto:hello@luxcutbymichael.com">Request appointment</a>
+    </div>
+  </div></section>
+</main>
+
+<footer><div class="wrap"><span>&copy; 2026 Lux Cut by Michael. All rights reserved.</span><a href="/brand/">Brand &amp; media kit</a></div></footer>
+</body>
+</html>
