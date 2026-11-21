@@ -43,12 +43,12 @@ nav a{margin-left:22px;text-decoration:none;font:600 13px var(--sans);letter-spa
 nav a:hover{color:var(--gold-hi)}
 nav a.cta{color:var(--gold-hi);border:1px solid var(--gold);padding:9px 16px}
 
-.hero{text-align:center;padding:10px 0 72px;background:radial-gradient(ellipse 64% 60% at 50% 30%,#2e2511,transparent 72%)}
-.logo{width:min(1040px,100%);aspect-ratio:1254/760;object-fit:cover;margin:0 auto;mix-blend-mode:lighten;-webkit-mask-image:radial-gradient(ellipse at center,#000 64%,transparent 100%);mask-image:radial-gradient(ellipse at center,#000 64%,transparent 100%)}
-.hero h1{font:400 clamp(48px,10vw,120px)/.95 var(--display);margin-top:-8px;background:linear-gradient(180deg,var(--gold-hi),var(--gold) 48%,var(--gold-lo));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{max-width:50ch;margin:16px auto 30px;color:var(--mute);font-size:17px}
+.hero{position:relative;isolation:isolate;text-align:center;padding:72px 0 80px;min-height:min(88vh,780px);display:grid;place-items:center;background:url(/assets/banner-dark.webp) 50% 50%/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(11,10,9,.30),rgba(11,10,9,.58) 62%,#0b0a09)}
+.logo{width:min(720px,88vw);aspect-ratio:1085/605;margin:0 auto;background:url(/assets/logo-black.webp) 50.25% 52.4%/115.6% auto no-repeat;box-shadow:0 34px 90px -24px #000d,0 0 0 1px #0008}
+.hero h1{font:400 clamp(48px,9vw,112px)/.95 var(--display);margin-top:34px;background:linear-gradient(180deg,var(--gold-hi),var(--gold) 48%,var(--gold-lo));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 14px #000a)}
+.hero p{max-width:50ch;margin:16px auto 30px;color:#eadfc6;font-size:17px;text-shadow:0 1px 12px #000a}
 .hero .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-
 .band{position:relative;background:#2a1b12}
 .band img{width:100%;aspect-ratio:1896/830;object-fit:cover;min-height:300px}
 .band .txt{position:absolute;left:max(5vw,20px);top:50%;transform:translateY(-50%);max-width:min(430px,44vw);color:#24160c}
@@ -82,7 +82,7 @@ section{padding:88px 0}
 .details img{width:100%;height:100%;object-fit:cover}
 .details .tall img{aspect-ratio:4/5}
 .details .wide{min-height:280px}
-.details .wide img{aspect-ratio:auto;min-height:280px}
+.details .wide img{aspect-ratio:auto;min-height:280px;object-position:82% 50%}
 .meet{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
 .meet .pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .meet .pair figure:nth-child(2){margin-top:44px}
@@ -115,19 +115,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </div></header>
 
 <main id="top">
-  <section class="hero" style="padding-top:10px">
+  <section class="hero">
     <div class="wrap">
-      <img class="logo" src="/assets/logo-black.webp" alt="Lux Cut logo: gold crown above LUX CUT lettering with crossed scissors">
+      <div class="logo" role="img" aria-label="Lux Cut logo: gold crown above LUX CUT lettering with crossed scissors"></div>
       <h1>Look like royalty.</h1>
       <p>Precision cuts, colour and styling in a studio built around you. Walk in sharp, walk out unforgettable.</p>
       <div class="row"><a class="btn" href="#visit">Book your chair</a><a class="btn ghost" href="#services">See services</a></div>
     </div>
   </section>
 
-  <div class="band" id="studio">
-    <img src="/assets/banner-dark.webp" alt="The Lux Cut studio: gold arched mirror, leather styling chair and gold scissors on marble" loading="lazy">
-    <div class="txt"><span class="eyebrow">The studio</span><p>A private space for precision, colour and care.</p></div>
-  </div>
 
   <section id="services"><div class="wrap">
     <div class="head"><div><span class="eyebrow">Services</span><h2>The menu</h2></div><p>Every service starts with a consultation, so the result fits you.</p></div>
@@ -171,7 +167,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     </div>
   </div></section>
 
-  <section style="padding-top:0"><div class="wrap">
+  <section id="studio"><div class="wrap"><div class="head"><div><span class="eyebrow">The studio</span><h2>A private space for precision, colour and care</h2></div></div>
     <div class="details">
       <div class="tall"><img src="/assets/studio-scissors-pouch.webp" alt="Gold scissors on a black leather pouch beside a comb, towel and flowers" loading="lazy"></div>
       <div class="wide"><img src="/assets/banner-blush.webp" alt="Blush-toned studio with roses, gold scissors and a leather styling chair" loading="lazy"></div>
