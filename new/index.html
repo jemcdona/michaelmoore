@@ -45,7 +45,7 @@ nav a.cta{color:var(--gold-hi);border:1px solid var(--gold);padding:9px 16px}
 
 /* Hero: the plaque is pinned to the wall in the photo, so it keeps its place at every width */
 .hero{background:var(--onyx);text-align:center;padding:0 0 80px}
-.stage{position:relative;width:100%;aspect-ratio:1896/830;background:url(/assets/banner-dark.webp) 50% 50%/cover no-repeat}
+.stage{position:relative;width:100%;aspect-ratio:1902/827;background:url(/assets/hero-dark.webp) 50% 50%/cover no-repeat}
 .stage::after{content:"";position:absolute;inset:auto 0 0 0;height:24%;background:linear-gradient(transparent,var(--onyx))}
 .sign{position:absolute;z-index:2;left:11%;top:13%;width:43%;aspect-ratio:1085/605;isolation:isolate;
   background:url(/assets/logo-black.webp) 50.25% 52.4%/115.6% auto no-repeat;
@@ -58,7 +58,7 @@ nav a.cta{color:var(--gold-hi);border:1px solid var(--gold);padding:9px 16px}
 .hero h1{font:400 clamp(48px,9vw,112px)/.95 var(--display);background:linear-gradient(180deg,var(--gold-hi),var(--gold) 48%,var(--gold-lo));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{max-width:50ch;margin:16px auto 30px;color:var(--mute);font-size:17px}
 .hero .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-@media(max-width:760px){.stage{aspect-ratio:4/3.3;background-position:14% 50%}.sign{left:10%;top:15%;width:80%}}
+@media(max-width:760px){.stage{aspect-ratio:4/3.3;background-position:26% 50%}}
 .band{position:relative;background:#2a1b12}
 .band img{width:100%;aspect-ratio:1896/830;object-fit:cover;min-height:300px}
 .band .txt{position:absolute;left:max(5vw,20px);top:50%;transform:translateY(-50%);max-width:min(430px,44vw);color:#24160c}
@@ -92,7 +92,7 @@ section{padding:88px 0}
 .details img{width:100%;height:100%;object-fit:cover}
 .details .tall img{aspect-ratio:4/5}
 .details .wide{min-height:280px}
-.details .wide img{aspect-ratio:auto;min-height:280px;object-position:82% 50%}
+.details .wide img{aspect-ratio:auto;min-height:280px;object-position:33% 50%}
 .meet{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
 .meet .pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .meet .pair figure:nth-child(2){margin-top:44px}
@@ -126,7 +126,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <main id="top">
   <section class="hero">
-    <div class="stage"><div class="sign" role="img" aria-label="Lux Cut sign: gold crown above LUX CUT lettering with crossed scissors, mounted on the studio wall"></div></div>
+    <div class="stage" role="img" aria-label="The Lux Cut studio with the gold Lux Cut sign mounted on the wall, a leather styling chair and gold scissors on marble"></div>
     <div class="wrap">
       <h1>Look like royalty.</h1>
       <p>Precision cuts, colour and styling in a studio built around you. Walk in sharp, walk out unforgettable.</p>
@@ -180,7 +180,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <section id="studio"><div class="wrap"><div class="head"><div><span class="eyebrow">The studio</span><h2>A private space for precision, colour and care</h2></div></div>
     <div class="details">
       <div class="tall"><img src="/assets/studio-scissors-pouch.webp" alt="Gold scissors on a black leather pouch beside a comb, towel and flowers" loading="lazy"></div>
-      <div class="wide"><img src="/assets/banner-blush.webp" alt="Blush-toned studio with roses, gold scissors and a leather styling chair" loading="lazy"></div>
+      <div class="wide"><img src="/assets/hero-blush.webp" alt="Blush-toned studio with the Lux Cut sign on the wall, roses, gold scissors and a leather styling chair" loading="lazy"></div>
     </div>
   </div></section>
 
