@@ -12,8 +12,8 @@
 <style>
 /* Media kit: champagne paper with onyx and gold tiles, mirroring the website identity */
 :root{
-  --onyx:#0b0a09; --gold:#c9a24b; --gold-hi:#f0d48a; --gold-lo:#a8802c;
-  --champagne:#eadcc3; --cream:#f5eee1; --paper:#fbf7ef; --espresso:#3a2517; --blush:#f0d9d0;
+  --onyx:#261208; --gold:#dfa54c; --gold-hi:#f9c372; --gold-lo:#7e5018;
+  --champagne:#f8e6cc; --cream:#f2dfc8; --paper:#faefdd; --espresso:#3f2514; --blush:#f0d9d0;
   --ink:#1b1510; --mute:#6f624d; --line:#d8c9ab;
   --display:'Bebas Neue',Impact,sans-serif; --serif:'Cormorant Garamond',Georgia,serif; --sans:Manrope,system-ui,sans-serif;
 }
@@ -34,7 +34,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .top{background:var(--onyx);color:#f6efe0}
 .top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:16px;flex-wrap:wrap}
 .top a{text-decoration:none;color:var(--gold-hi);font:600 13px var(--sans);letter-spacing:.12em;text-transform:uppercase}
-.cover{background:radial-gradient(ellipse 62% 70% at 50% 25%,#2e2511,var(--onyx) 74%);color:#f6efe0;text-align:center;padding:28px 0 70px}
+.cover{background:radial-gradient(ellipse 62% 70% at 50% 25%,#4a2c18,var(--onyx) 74%);color:#f6efe0;text-align:center;padding:28px 0 70px}
 .cover .logo{width:min(900px,100%);aspect-ratio:1254/760;object-fit:cover;margin:0 auto;mix-blend-mode:lighten;-webkit-mask-image:radial-gradient(ellipse at center,#000 64%,transparent 100%);mask-image:radial-gradient(ellipse at center,#000 64%,transparent 100%)}
 .cover h1{font:400 clamp(40px,8vw,92px)/.95 var(--display);background:linear-gradient(180deg,var(--gold-hi),var(--gold) 48%,var(--gold-lo));-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:-6px}
 .cover p{color:#b6ab92;margin-top:10px}
@@ -57,7 +57,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .sw .meta{padding:12px 14px;font-size:13px;color:var(--mute)}
 .sw .meta b{display:block;color:var(--ink);font-size:15px}
 .sw .meta code{font:600 13px ui-monospace,Consolas,monospace;color:var(--ink)}
-.grad{height:70px;margin-top:14px;background:linear-gradient(180deg,#f0d48a,#c9a24b 48%,#a8802c);display:flex;align-items:center;padding:0 18px;color:#140f04;font:600 13px var(--sans)}
+.grad{height:70px;margin-top:14px;background:linear-gradient(180deg,#f9c372,#dfa54c 55%,#c98d38);display:flex;align-items:center;padding:0 18px;color:#140f04;font:600 13px var(--sans)}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--onyx);color:var(--gold-hi);padding:10px 18px;font:600 13px var(--sans);opacity:0;pointer-events:none;transition:opacity .2s;z-index:50}
 .toast.on{opacity:1}
 
@@ -111,7 +111,7 @@ footer{background:var(--onyx);color:#8e856f;padding:34px 0;font-size:13px}
     <div><h3>Do</h3><ul>
       <li><b>Keep clear space</b> equal to the height of the crown's top ornament on every side.</li>
       <li><b>Minimum size:</b> 120 px wide on screen, 30 mm in print.</li>
-      <li><b>Place it</b> on plain onyx, or on calm areas of a photo.</li></ul></div>
+      <li><b>Place it</b> on plain mocha or espresso, or on calm areas of a photo.</li></ul></div>
     <div><h3>Don't</h3><ul>
       <li>Stretch, rotate or recolour the mark.</li>
       <li>Add shadows, outlines or effects.</li>
@@ -120,18 +120,20 @@ footer{background:var(--onyx);color:#8e856f;padding:34px 0;font-size:13px}
 </div></section>
 
 <section><div class="wrap">
-  <span class="eyebrow">2 &middot; Colour</span><h2>Gold on onyx, warmed by the studio</h2>
-  <p class="lead">Gold and onyx come straight from the logo. Champagne, espresso and blush come from the studio photography. Click a swatch to copy its hex code.</p>
+  <span class="eyebrow">2 &middot; Colour</span><h2>Plaster, mocha and brushed gold</h2>
+  <p class="lead">Every colour is sampled from the studio banner: the lit plaster wall, the champagne marble, the mocha sign face and the brushed gold lettering. Click a swatch to copy its hex code.</p>
   <div class="sw">
-    <button type="button" data-hex="#0B0A09"><div class="chip" style="background:#0b0a09"></div><div class="meta"><b>Onyx</b><code>#0B0A09</code> &middot; 11 10 9<br>Backgrounds, text on light</div></button>
-    <button type="button" data-hex="#C9A24B"><div class="chip" style="background:#c9a24b"></div><div class="meta"><b>Lux Gold</b><code>#C9A24B</code> &middot; 201 162 75<br>Primary accent, rules, icons</div></button>
-    <button type="button" data-hex="#F0D48A"><div class="chip" style="background:#f0d48a"></div><div class="meta"><b>Gold Light</b><code>#F0D48A</code> &middot; 240 212 138<br>Headlines, highlights</div></button>
-    <button type="button" data-hex="#A8802C"><div class="chip" style="background:#a8802c"></div><div class="meta"><b>Gold Deep</b><code>#A8802C</code> &middot; 168 128 44<br>Text on light paper</div></button>
-    <button type="button" data-hex="#EADCC3"><div class="chip" style="background:#eadcc3"></div><div class="meta"><b>Champagne</b><code>#EADCC3</code> &middot; 234 220 195<br>Warm panels, print</div></button>
-    <button type="button" data-hex="#3A2517"><div class="chip" style="background:#3a2517"></div><div class="meta"><b>Espresso</b><code>#3A2517</code> &middot; 58 37 23<br>Leather, text on champagne</div></button>
-    <button type="button" data-hex="#F0D9D0"><div class="chip" style="background:#f0d9d0"></div><div class="meta"><b>Blush</b><code>#F0D9D0</code> &middot; 240 217 208<br>Soft seasonal accent</div></button>
+    <button type="button" data-hex="#3F2514"><div class="chip" style="background:#3f2514"></div><div class="meta"><b>Mocha</b><code>#3F2514</code> &middot; 63 37 20<br>Sign face, dark sections</div></button>
+    <button type="button" data-hex="#261208"><div class="chip" style="background:#261208"></div><div class="meta"><b>Espresso</b><code>#261208</code> &middot; 38 18 8<br>Text, footer, navigation</div></button>
+    <button type="button" data-hex="#F2DFC8"><div class="chip" style="background:#f2dfc8"></div><div class="meta"><b>Plaster</b><code>#F2DFC8</code> &middot; 242 223 200<br>Page background, the wall</div></button>
+    <button type="button" data-hex="#F8E6CC"><div class="chip" style="background:#f8e6cc"></div><div class="meta"><b>Champagne</b><code>#F8E6CC</code> &middot; 248 230 204<br>Cards, the marble counter</div></button>
+    <button type="button" data-hex="#C2A17D"><div class="chip" style="background:#c2a17d"></div><div class="meta"><b>Sand</b><code>#C2A17D</code> &middot; 194 161 125<br>Borders, soft panels</div></button>
+    <button type="button" data-hex="#6A3618"><div class="chip" style="background:#6a3618"></div><div class="meta"><b>Walnut</b><code>#6A3618</code> &middot; 106 54 24<br>Cabinetry, warm accents</div></button>
+    <button type="button" data-hex="#DFA54C"><div class="chip" style="background:#dfa54c"></div><div class="meta"><b>Gold</b><code>#DFA54C</code> &middot; 223 165 76<br>Primary accent, buttons</div></button>
+    <button type="button" data-hex="#F9C372"><div class="chip" style="background:#f9c372"></div><div class="meta"><b>Gold Light</b><code>#F9C372</code> &middot; 249 195 114<br>Lettering, headlines on mocha</div></button>
+    <button type="button" data-hex="#7E5018"><div class="chip" style="background:#7e5018"></div><div class="meta"><b>Gold Deep</b><code>#7E5018</code> &middot; 126 80 24<br>Gold text on light backgrounds</div></button>
   </div>
-  <div class="grad">Gold gradient: linear-gradient(180deg, #F0D48A, #C9A24B 48%, #A8802C)</div>
+  <div class="grad">Gold gradient: linear-gradient(180deg, #F9C372, #DFA54C 55%, #C98D38)</div>
 </div></section>
 
 <section><div class="wrap">
