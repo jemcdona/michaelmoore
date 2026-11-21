@@ -67,16 +67,15 @@ h1,h2,h3{text-wrap:balance}
 
 /* ---------- Concept C: Leopard Luxe ---------- */
 .leo{--bg:#070605;--fg:#fbf4e3;--gold:#e0b64d;--gold2:#a8802c;--mute:#b3a98f;background:var(--bg);color:var(--fg);font-family:Manrope,sans-serif;position:relative;overflow:hidden}
-.leo::before{content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;background:
-radial-gradient(ellipse 14px 9px at 20px 22px,#3a2a12 60%,transparent 64%),radial-gradient(ellipse 12px 8px at 58px 52px,#2c200e 60%,transparent 64%),radial-gradient(ellipse 15px 9px at 88px 16px,#33260f 60%,transparent 64%);background-size:110px 70px;-webkit-mask-image:linear-gradient(180deg,#000,transparent 38%);mask-image:linear-gradient(180deg,#000,transparent 38%)}
 .leo>*{position:relative}
 .leo .top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font:800 12px Manrope,sans-serif;letter-spacing:.2em;text-transform:uppercase;gap:12px}
 .leo .top a{color:var(--gold);text-decoration:none;border:1px solid var(--gold);padding:10px 18px}
-.leo .hero{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;padding:26px 0 70px}
-.leo h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(64px,13vw,150px);line-height:.86;background:linear-gradient(180deg,#f6dc8f,var(--gold) 45%,var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.leo .hero p{color:var(--mute);margin:18px 0 26px;max-width:38ch;line-height:1.6}
+.leo .hero{text-align:center;padding:0 0 60px}
+.leo .banner{background:radial-gradient(ellipse 62% 72% at 50% 46%,#2e2511,transparent 72%);padding-top:4px}
+.leo h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(46px,10vw,118px);line-height:.95;margin-top:-10px;background:linear-gradient(180deg,#f6dc8f,var(--gold) 45%,var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.leo .hero p{color:var(--mute);margin:16px auto 28px;max-width:46ch;line-height:1.6}
 .leo .btn{display:inline-block;background:linear-gradient(180deg,#f0cd70,var(--gold2));color:#140f04;padding:18px 40px;text-decoration:none;font:800 14px Manrope,sans-serif;letter-spacing:.18em;text-transform:uppercase}
-.leo .logo{width:100%;border:1px solid #4a3a16;box-shadow:0 0 80px -20px #c9a24b55}
+.leo .logo{width:min(1040px,100%);margin:0 auto;mix-blend-mode:lighten;-webkit-mask-image:radial-gradient(ellipse at center,#000 64%,transparent 100%);mask-image:radial-gradient(ellipse at center,#000 64%,transparent 100%)}
 .leo h2{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(40px,7vw,72px);color:var(--gold);margin-bottom:24px;letter-spacing:.02em}
 .leo section{padding:54px 0}
 .leo .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
@@ -89,7 +88,6 @@ radial-gradient(ellipse 14px 9px at 20px 22px,#3a2a12 60%,transparent 64%),radia
 .leo .hours div{border-top:2px solid var(--gold);padding-top:10px;color:var(--mute);font-size:14px}
 .leo .hours b{display:block;color:var(--fg);font-size:18px}
 .leo footer{padding:26px 0 34px;color:#7c7460;font-size:12px}
-@media(max-width:720px){.leo .hero{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:no-preference){.noir .btn,.leo .btn{transition:transform .2s}.noir .btn:hover,.leo .btn:hover{transform:translateY(-2px)}}
 </style>
 
@@ -152,8 +150,10 @@ radial-gradient(ellipse 14px 9px at 20px 22px,#3a2a12 60%,transparent 64%),radia
   <div class="wrap">
     <div class="top"><span>Lux Cut by Michael</span><a href="#lbook">Book</a></div>
     <header class="hero">
-      <div><h1>Look<br>like<br>royalty.</h1><p>Fades, shape-ups and beard work with a crown-level finish. Walk in sharp, walk out unforgettable.</p><a class="btn" href="#lbook">Book your cut</a></div>
-      <div class="logo" role="img" aria-label="Lux Cut logo"></div>
+      <div class="banner"><div class="logo" role="img" aria-label="Lux Cut logo"></div></div>
+      <h1>Look like royalty.</h1>
+      <p>Fades, shape-ups and beard work with a crown-level finish. Walk in sharp, walk out unforgettable.</p>
+      <a class="btn" href="#lbook">Book your cut</a>
     </header>
   </div>
   <div class="strip">Fades &middot; Beards &middot; Style &middot; Colour</div>
