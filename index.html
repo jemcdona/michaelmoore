@@ -75,7 +75,11 @@ nav a.cta{color:var(--gold-hi);border:1px solid var(--gold);padding:9px 16px}
 }
 @keyframes twinkle{0%,28%,100%{opacity:0;transform:scale(.3) rotate(0)}10%{opacity:1;transform:translateY(-3px) scale(1) rotate(45deg)}20%{opacity:.4;transform:translateY(-6px) scale(.6) rotate(80deg)}}
 .visit{position:relative;overflow:hidden}
-.mapbox{position:relative;z-index:1;height:190px;margin-top:30px;border:1px solid var(--gold);overflow:hidden;background:var(--espresso)}
+.visit .wrap>div{display:flex;flex-direction:column}
+.visit .contact{align-items:flex-start}
+.visit .contact .btn{margin-top:auto;display:inline-flex;align-items:center;height:52px;box-sizing:border-box}
+.dir input,.dir .btn{height:52px;box-sizing:border-box}
+.mapbox{position:relative;z-index:1;flex:1;min-height:190px;margin-top:30px;border:1px solid var(--gold);overflow:hidden;background:var(--espresso)}
 .mapbox iframe{display:block;width:100%;height:100%;border:0;filter:grayscale(1) invert(.92) sepia(.85) saturate(1.6) hue-rotate(-8deg) brightness(.95) contrast(1.05)}
 .dir{position:relative;z-index:1;display:flex;gap:10px;margin-top:12px}
 .dir input{flex:1;min-width:0;padding:16px 18px;background:rgba(223,165,76,.1);border:1px solid var(--gold);color:var(--on-dark);font:700 14px var(--sans);letter-spacing:.04em}
@@ -271,7 +275,7 @@ footer .social svg{width:18px;height:18px;flex:none}
       <a class="l" href="tel:+17349725199">(734) 972-5199</a>
       <a class="l" href="mailto:luxcutbymichael@gmail.com">luxcutbymichael@gmail.com</a>
       <p style="margin:6px 0 14px">Salon Varga, 123 Keveling Dr, Suite 202<br>Saline, Michigan 48176</p>
-      <p style="margin:0 0 24px;opacity:.8">Hair color and cuts for all hair types and textures, serving clients in Saline, Ann Arbor, Ypsilanti and all of Washtenaw County.</p>
+      <p style="margin:0 0 22px;opacity:.8;font-size:14px;line-height:1.5">Hair color and cuts for all hair types and textures, serving clients in Saline, Ann Arbor, Ypsilanti and all of Washtenaw County.</p>
       <a class="btn" href="https://www.vagaro.com/luxcutbyck/services" target="_blank" rel="noopener">Book appointment</a>
     </div>
   </div></section>
