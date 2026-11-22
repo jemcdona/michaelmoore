@@ -69,12 +69,13 @@ nav a.cta{color:var(--gold-hi);border:1px solid var(--gold);padding:9px 16px}
 .hero .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .glitter{position:absolute;inset:0;overflow:hidden;pointer-events:none}
 .glitter i{position:absolute;left:var(--x);top:var(--y);width:var(--s);height:var(--s);opacity:0;background:radial-gradient(circle,#fff7de 0,var(--gold-hi) 45%,var(--gold) 100%);clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
-.glitter i.d{clip-path:none;border-radius:50%;box-shadow:0 0 12px 4px #f9c372cc}
+.glitter i.d{clip-path:none;border-radius:50%;box-shadow:0 0 6px 2px #f9c372b3}
 @media (prefers-reduced-motion:no-preference){
   .glitter i{animation:twinkle var(--t) ease-in-out var(--l) infinite}
   .hero h1{background:linear-gradient(105deg,transparent 42%,rgba(255,247,222,.9) 50%,transparent 58%) no-repeat,linear-gradient(180deg,var(--gold-hi),var(--gold) 55%,#c98d38);background-size:250% 100%,100% 100%;background-position:105% 0,0 0;-webkit-background-clip:text;background-clip:text;animation:sheen 8s ease-in-out 1.5s infinite}
 }
-@keyframes twinkle{0%,100%{opacity:0;transform:translateY(0) scale(.3) rotate(0)}40%{opacity:1;transform:translateY(-8px) scale(1) rotate(45deg)}65%{opacity:.35;transform:translateY(-14px) scale(.7) rotate(80deg)}}
+@keyframes twinkle{0%,28%,100%{opacity:0;transform:scale(.3) rotate(0)}10%{opacity:1;transform:translateY(-3px) scale(1) rotate(45deg)}20%{opacity:.4;transform:translateY(-6px) scale(.6) rotate(80deg)}}
+.visit{position:relative;overflow:hidden}
 @keyframes sheen{0%,55%{background-position:105% 0,0 0}100%{background-position:-15% 0,0 0}}
 @media(max-width:760px){.stage{aspect-ratio:4/3.3;max-height:none;background-position:18% 50%}}
 
@@ -162,7 +163,7 @@ footer .social svg{width:18px;height:18px;flex:none}
 
 <main id="top">
   <section class="hero">
-    <div class="stage" role="img" aria-label="The Lux Cut studio with the gold Lux Cut sign mounted on the wall, a leather styling chair and gold scissors on marble"><div class="glitter" aria-hidden="true"></div></div>
+    <div class="stage" role="img" aria-label="The Lux Cut studio with the gold Lux Cut sign mounted on the wall, a leather styling chair and gold scissors on marble"><div class="glitter" data-n="14" data-top="1" aria-hidden="true"></div></div>
     <div class="wrap">
       <h1>Look like royalty.</h1>
       <p>Precision cuts, color and styling in a studio built around you. Walk in sharp, walk out unforgettable.</p>
@@ -243,7 +244,7 @@ footer .social svg{width:18px;height:18px;flex:none}
     </div>
   </div></section>
 
-  <section class="visit dark" id="visit"><div class="wrap">
+  <section class="visit dark" id="visit"><div class="glitter" data-n="16" aria-hidden="true"></div><div class="wrap">
     <div>
       <span class="eyebrow">Opening hours</span><h2 style="margin:12px 0 22px">Visit</h2>
       <div class="hours">
@@ -271,16 +272,18 @@ footer .social svg{width:18px;height:18px;flex:none}
 </div></footer>
 <script>
 (function(){
-  var g=document.querySelector('.glitter');if(!g)return;
   if(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches)return;
-  var n=window.innerWidth<760?30:52,r=Math.random,f=document.createDocumentFragment();
-  for(var k=0;k<n;k++){
-    var s=document.createElement('i'),dot=k%3===0,size=dot?3+r()*4:12+r()*16;
-    s.style.cssText='--x:'+(r()*98).toFixed(1)+'%;--y:'+(r()*92).toFixed(1)+'%;--s:'+size.toFixed(1)+'px;--t:'+(3+r()*4).toFixed(1)+'s;--l:-'+(r()*7).toFixed(1)+'s';
-    if(dot)s.className='d';
-    f.appendChild(s);
-  }
-  g.appendChild(f);
+  var r=Math.random,small=window.innerWidth<760;
+  document.querySelectorAll('.glitter').forEach(function(g){
+    var n=Math.round(+g.getAttribute('data-n')*(small?.7:1)),maxY=g.hasAttribute('data-top')?34:92,f=document.createDocumentFragment();
+    for(var k=0;k<n;k++){
+      var s=document.createElement('i'),dot=k%3===0,size=dot?2.5+r()*2:7+r()*7;
+      s.style.cssText='--x:'+(r()*97).toFixed(1)+'%;--y:'+(r()*maxY).toFixed(1)+'%;--s:'+size.toFixed(1)+'px;--t:'+(5+r()*6).toFixed(1)+'s;--l:-'+(r()*11).toFixed(1)+'s';
+      if(dot)s.className='d';
+      f.appendChild(s);
+    }
+    g.appendChild(f);
+  });
 })();
 </script>
 </body>
