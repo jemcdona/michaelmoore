@@ -51,12 +51,12 @@ nav a{margin-left:22px;text-decoration:none;font:600 13px var(--sans);letter-spa
 nav a:hover{color:var(--gold-hi)}
 nav a.cta{color:var(--gold-hi);border:1px solid var(--gold);padding:9px 16px}
 
-.hero{background:var(--mocha);text-align:center;padding:0 0 84px}
+.hero{background:var(--mocha);text-align:center;padding:0 0 44px}
 .stage{position:relative;width:100%;aspect-ratio:1903/826;max-height:68vh;background:url(/assets/hero-space.webp) 50% 22%/cover no-repeat}
 .stage::after{content:"";position:absolute;inset:auto 0 0 0;height:26%;background:linear-gradient(transparent,var(--mocha))}
 .hero .wrap{padding-top:30px}
 .hero h1{font:400 clamp(48px,9vw,112px)/.95 var(--display);background:linear-gradient(180deg,var(--gold-hi),var(--gold) 55%,#c98d38);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
-.hero p{max-width:50ch;margin:16px auto 30px;color:var(--on-dark-soft);font-size:17px}
+.hero p{max-width:50ch;margin:16px auto 0;color:var(--on-dark-soft);font-size:17px}
 .hero .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 @media(max-width:760px){.stage{aspect-ratio:4/3.3;max-height:none;background-position:18% 50%}}
 
@@ -114,7 +114,7 @@ section{padding:88px 0}
 .visit::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--pelt) 0 100%/180px 180px;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.04) 35%,rgba(0,0,0,.18) 72%,rgba(0,0,0,.3) 100%);mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.04) 35%,rgba(0,0,0,.18) 72%,rgba(0,0,0,.3) 100%)}
 .pelt{position:relative;height:44px;background:var(--mocha);border-bottom:2px solid var(--gold)}
 .pelt::before{content:"";position:absolute;inset:0;background:var(--pelt) 0 0/180px 180px;opacity:.3}
-footer{background:var(--espresso);color:#a98e6c;padding:34px 0;font-size:12px}
+footer{background:var(--espresso);color:var(--gold);padding:34px 0;font-size:12px}
 footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 footer a{color:var(--gold)}
 
