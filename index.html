@@ -81,6 +81,8 @@ section{padding:88px 0}
 .slot{aspect-ratio:1;display:grid;place-items:center;text-align:center;background:radial-gradient(ellipse at 50% 40%,#3a2210,var(--mocha) 70%);border:1px solid var(--gold-lo);box-shadow:inset 0 0 0 6px var(--mocha),inset 0 0 0 7px #8f551e88}
 .slot span{font:400 clamp(24px,3vw,34px)/1 var(--display);letter-spacing:.12em;color:var(--gold-hi);will-change:transform;transform:translateZ(0);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:geometricPrecision}
 .slot span::after{content:"";display:block;width:34px;height:2px;margin:12px auto 0;background:var(--gold)}
+.photo{margin:0;padding:3px;aspect-ratio:3/4;background:linear-gradient(135deg,#f9c372,#c98d38 32%,#8f551e 52%,#d9a145 76%,#f9c372)}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
 @media(max-width:760px){.slots{grid-template-columns:repeat(2,1fr)}}
 .colour .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .colour img{width:100%;aspect-ratio:1;object-fit:cover;border:1px solid var(--line-dark)}
@@ -204,12 +206,14 @@ footer a{color:var(--gold)}
 
   <section id="studio" class="studio"><div class="wrap">
     <div class="head"><div><span class="eyebrow">Colour Studio</span><h2 class="one-line">Beautiful hair starts here</h2></div></div>
-    <div class="slots"><div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div>
-      <div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div>
-      <div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div>
-      <div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div>
-      <div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div>
-      <div class="slot" role="img" aria-label="Photo coming soon"><span>Coming soon</span></div></div>
+    <div class="slots">
+      <figure class="photo"><img src="/assets/colour/magenta-ombre.webp" alt="Long wavy magenta ombre colour with a dark root" loading="lazy"></figure>
+      <figure class="photo"><img src="/assets/colour/silver-blonde.webp" alt="Long silver-blonde hair with a smooth, glossy finish" loading="lazy"></figure>
+      <figure class="photo"><img src="/assets/colour/copper-orange.webp" alt="Vivid copper-orange colour styled in soft curls" loading="lazy"></figure>
+      <figure class="photo"><img src="/assets/colour/rose-highlights.webp" alt="Rose-toned brunette with blonde highlights in a sleek lob" loading="lazy"></figure>
+      <figure class="photo"><img src="/assets/colour/golden-blonde.webp" alt="Golden blonde layers with soft, lived-in dimension" loading="lazy"></figure>
+      <figure class="photo"><img src="/assets/colour/emerald-green.webp" alt="Emerald and teal green vivid colour on long straight hair" loading="lazy"></figure>
+    </div>
   </div></section>
 
   <section class="visit dark" id="visit"><div class="wrap">
